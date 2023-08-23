@@ -25,37 +25,29 @@ https://tonejs.github.io/
 ### Prerequisites
 
 - Modern web browser with microphone access
-- Node.js (only required if you plan to use a local development server)
+- Node.js
 
 ### Installation
 
 1. Clone the repository:
+- git clone https://github.com/yourusername/audio-visualizer.git
 
-   ```sh
-   git clone https://github.com/yourusername/audio-visualizer.git
-Navigate to the project directory:
+2. Navigate to the project directory:
+- Copy code
+- cd audio-visualizer
 
-sh
+3. Install the necessary packages:
+
 Copy code
-cd audio-visualizer
-If you're using a local development server:
+- npm install http-server
 
-Install the necessary packages:
+4. Start the local server:
+- Copy code
+- npm start
+- Access the visualizer in your browser at http://127.0.0.1:8080.
 
-sh
-Copy code
-npm install http-server
-Start the local server:
-
-sh
-Copy code
-npm start
-Access the visualizer in your browser at http://127.0.0.1:8080.
-
-Usage
-Open the visualizer in your browser.
-
-Allow microphone access when prompted.
-
-Interact with the visualizer by making sounds into your microphone. The bars will respond to the audio input.
+### Usage
+- Open the visualizer in your browser.
+- Allow microphone access when prompted.
+- Interact with the visualizer by making sounds into your microphone. The bars will respond to the audio input.
 
