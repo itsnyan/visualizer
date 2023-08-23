@@ -37,8 +37,6 @@ https://tonejs.github.io/
 - cd audio-visualizer
 
 3. Install the necessary packages:
-
-Copy code
 - npm install http-server
 
 4. Start the local server:
