@@ -1,7 +1,7 @@
 let mic, fft;
 let audioContextStarted = false;
 
-console.log("test");
+console.log("test this is working");
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
