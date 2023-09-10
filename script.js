@@ -16,10 +16,6 @@ function setup() {
   let startButton = createButton("Start Audio");
   startButton.position(10, 10);
   startButton.mousePressed(startAudio);
-
-  // Create an event listener for user gesture
-  console.log("setup");
-  window.addEventListener("click", handleUserGesture);
 }
 
 function startAudio() {
@@ -31,12 +27,6 @@ function startAudio() {
     });
     audioContextStarted = true;
   }
-}
-
-function handleUserGesture() {
-  // Handle user gesture, e.g., by starting audio
-  console.log("clicked");
-  startAudio();
 }
 
 function draw() {
