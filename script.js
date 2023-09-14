@@ -11,6 +11,7 @@ function setup() {
   rectMode(CENTER);
   //fft = new p5.FFT(0.8, 512);
   bg = loadImage("assets/background.jpg");
+  //bg = loadImage("assets/nathan.jpg");
   // noLoop();
 
   let startButton = createButton("Start Audio");
@@ -73,6 +74,7 @@ function draw() {
   noStroke();
   rect(0, 0, width, height);
 
+  stroke(random(100, 255), random(200, 255), random(100, 255));
   stroke(255);
   strokeWeight(3);
   noFill();
