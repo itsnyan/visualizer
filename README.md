@@ -1,7 +1,7 @@
 # Audio Visualizer with p5.js and Tone.js
 This simple audio visualizer application uses the p5.js and Tone.js libraries to create visual effects based on microphone input. The visualizer displays dynamic shapes and particles that respond to the audio frequencies detected by the microphone.
 
-⚠️ Although this application requires microphone access, its sole purpose is to serve as an input for the FFT, enabling the analysis and retrieval of the waveform. ([code source](https://github.com/itsnyan/visualizer/blob/main/script.js#L25))
+NOTE: Although this application requires microphone access, its sole purpose is to serve as an input for the FFT, enabling the analysis and retrieval of the waveform. ([code source](https://github.com/itsnyan/visualizer/blob/main/script.js#L25))
 
 ## Getting Started
 
