@@ -1,51 +1,31 @@
 # Audio Visualizer with p5.js and Tone.js
-
-Create an audio visualizer that responds to audio input from the browser's microphone using p5.js and Tone.js.
-
-## Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Demo](#demo)
-- [Contributing](#contributing)
-- [License](#license)
-
-## About
-
-This project demonstrates how to create an audio visualizer using p5.js and Tone.js. The visualizer displays bars that respond to audio input from the microphone, creating a dynamic and interactive experience.
-
-https://p5js.org/
-https://tonejs.github.io/
+This simple audio visualizer application uses the p5.js and Tone.js libraries to create mesmerizing visual effects based on microphone input. The visualizer displays dynamic shapes and particles that respond to the audio frequencies detected by the microphone.
 
 ## Getting Started
 
-### Prerequisites
+Demo: https://itsnyan.github.io/visualizer/
 
-- Modern web browser with microphone access
-- Node.js
+## Usage
+- Upon opening the application, you will see a "Start Audio" button. Click on it to initiate the microphone input.
+- Once the audio is started, the visualizer will respond to the detected audio frequencies. You will observe dynamic shapes and particles moving on the screen, reacting to changes in the audio input.
+- The visualizer incorporates an image as the background. You can replace the default image by modifying the bg variable in the setup function.
+- Adjust the visual effects by modifying parameters such as the scale factor and color within the draw function. Experiment with these values to customize the visual experience.
 
-### Installation
+## Important Notes
+- Ensure that your browser allows microphone access for the application to function properly.
+- The application uses the p5.js library for graphics and user interface, as well as the Tone.js library for audio manipulation.
+- The Particle class is responsible for creating and managing the behavior of particles on the screen.
 
-1. Clone the repository:
-- git clone https://github.com/yourusername/audio-visualizer.git
+## Credits
+- p5.js: Library for creative coding with a focus on drawing and animation.
+- Tone.js: A Web Audio framework for creating interactive music in the browser.
 
-2. Navigate to the project directory:
-- Copy code
-- cd audio-visualizer
 
-3. Install the necessary packages:
-- npm install http-server
 
-4. Start the local server:
-- Copy code
-- npm start
-- Access the visualizer in your browser at http://127.0.0.1:8080.
 
-### Usage
-- Open the visualizer in your browser.
-- Allow microphone access when prompted.
-- Interact with the visualizer by making sounds into your microphone. The bars will respond to the audio input.
+
+
+
+
+
 
