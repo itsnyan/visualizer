@@ -10,9 +10,7 @@ function setup() {
   imageMode(CENTER);
   rectMode(CENTER);
   //fft = new p5.FFT(0.8, 512);
-  bg = loadImage("assets/background.jpg");
-  //bg = loadImage("assets/nathan.jpg");
-  // noLoop();
+  bg = loadImage("assets/background.jpg"); //todo - update static bg to option to link/upload img
 
   let startButton = createButton("Start Audio");
   startButton.position(10, 10);
@@ -39,11 +37,6 @@ function startAudio() {
   }
 }
 
-function getFreqSpectrum() {
-  let frequencies = fft.analyze();
-  console.log(frequencies);
-}
-
 function draw() {
   background(0);
 
@@ -57,7 +50,6 @@ function draw() {
 
   translate(width / 2, height / 2);
 
-  setTimeout(fft.analyze(), 1000);
   fft.analyze();
   amp = fft.getEnergy(20, 200);
 
@@ -78,9 +70,6 @@ function draw() {
   stroke(255);
   strokeWeight(3);
   noFill();
-
-  console.log(mic.getLevel());
-  console.log(mic);
 
   let wave = fft.waveform();
 
@@ -116,7 +105,6 @@ class Particle {
     this.acc = this.pos.copy().mult(random(0.0001, 0.00001));
 
     this.w = random(3, 5);
-    //this.color = [random(100, 255), random(200, 255), random(100, 255)];
     this.color = "255, 255, 255, 0.3";
   }
   update(cond) {
